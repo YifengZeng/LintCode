@@ -70,10 +70,13 @@ public class Q447SearchinaBigSortedArray {
         return -1;
     }
 
+    /**
+     * placeholder to get rid of IDE error messages
+     */
     private class ArrayReader {
         // get the number at index, return -1 if index is less than zero.
         public int get(int index) {
-            return -1;//just a place holder to get rid of error message from IDE
+            return -1;
         }
     }
 
