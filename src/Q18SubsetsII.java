@@ -47,7 +47,10 @@ public class Q18SubsetsII {
         return results;
     }
 
-    private void dfsHelper(int index, int[] nums, ArrayList<Integer> subset, ArrayList<ArrayList<Integer>> results) {
+    private void dfsHelper(int index,
+                           int[] nums,
+                           ArrayList<Integer> subset,
+                           ArrayList<ArrayList<Integer>> results) {
         //deep copy
         results.add(new ArrayList<Integer>(subset));
 
@@ -59,9 +62,6 @@ public class Q18SubsetsII {
             dfsHelper(i + 1, nums, subset, results);
             subset.remove(subset.size() - 1);
         }
-
-
-
     }
 
     public static void main(String[] args) {
