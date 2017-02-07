@@ -49,11 +49,13 @@ public class Q595BinaryTreeLongestConsecutiveSequence {
      * @return the length of the longest consecutive sequence path
      */
     private int longestNumber;
+
     public int longestConsecutive(TreeNode root) {
         longestNumber = 0;
         helper(root);
         return longestNumber;
     }
+
     private int helper(TreeNode root) {
         if (root == null) {
             return 0;
