@@ -46,6 +46,7 @@ public class Q376BinaryTreePathSum {
      * @param target an integer
      * @return all valid paths
      */
+
     public List<List<Integer>> binaryTreePathSum(TreeNode root, int target) {
         //get the sum of root-current node, and if it is target, save path into result
         List<List<Integer>> result = new ArrayList<>();
